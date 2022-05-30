@@ -89,12 +89,3 @@ mat-divider {
     }
 
 }
-
-
-
-@media (max-width: 500px) {
-    .content-wrap-galery{
-        width: 80%;
-    }
-
-}
