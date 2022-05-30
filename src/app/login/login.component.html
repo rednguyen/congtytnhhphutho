@@ -1,0 +1,14 @@
+<div class="login">
+    <form [formGroup]="userData" (ngSubmit)="onSubmit()" class="content-wrapper">
+        <div class="content content-left">
+            <label class="label">Ten Dang Nhap</label>
+            <label class="label">Mat Khau</label>
+        </div>
+
+        <div class="content content-right">
+            <input class="user" formControlName="username" type="username" id="name">
+            <input class="user" formControlName="password" type="password" id="password">
+        </div>
+        <button type="submit">Submit</button>
+    </form>  
+</div>

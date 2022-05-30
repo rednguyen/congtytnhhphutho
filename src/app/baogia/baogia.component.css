@@ -1,0 +1,65 @@
+.content-wrapper {
+    width: 50%;
+    margin: 2% auto;
+    position: relative;
+    padding: 5px;
+    background: rgb(211, 226, 253);
+}
+
+.space {
+    margin: 1.5%;
+    margin-top: 4%
+}
+
+.space label {
+    left: 20px;
+    position: relative;
+}
+
+.space .fieldReuired{
+    left: 200px;
+    position: absolute;
+    width: 50%;
+}
+
+button {
+    background: black;
+    color: white;
+    border:black;
+    border-radius: 10px;
+    width: 7rem;
+    height: 2rem;
+    font-weight: 600;
+    
+}
+
+button:hover{
+    background: rgb(139, 139, 139);
+    border:rgb(46, 40, 39);
+}
+
+.space-button {
+    text-align: center;
+}
+
+.space-chonsanpham {
+    margin: 1.5%;
+    margin-top: 4%;
+    left: 20px;
+    position: relative;
+}
+
+.space-chonsanpham label {
+    font-weight: 500;
+
+}
+
+.space-list {
+    margin: 5%
+}
+
+@media (max-width: 999px){
+    .content-wrapper {
+        width: 100%
+    }
+}

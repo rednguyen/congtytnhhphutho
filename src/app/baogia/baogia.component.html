@@ -1,0 +1,53 @@
+<div class="baogia">
+    <div class="content-wrapper">
+        <form [formGroup]="formBaoGia" (ngSubmit)="onSubmit()">
+            <div class="space">
+                <label class="label">Tên Khách Hàng *</label>
+                <input class="fieldReuired" formControlName="name" type="text" id="name">
+                <div class="fieldReuired" *ngIf="formBaoGia.get('name').touched && formBaoGia.get('name').invalid" style="color: red;">Xin vui lòng nhập tên khách hàng</div>
+            </div>
+            
+            <div class="space">
+                <label class="label">Địa Chỉ *</label>
+                <input class="fieldReuired" formControlName="address" type="text" id="address" name="address">
+                <div class="fieldReuired" *ngIf="formBaoGia.get('address').touched && formBaoGia.get('address').invalid" style="color: red;">Xin vui lòng cung cấp địa chỉ</div>
+            </div>
+            <div class="space">
+                  
+                <label class="label">Email *</label>
+                <input class="fieldReuired" formControlName="email" type="text" id="email">
+                <div class="fieldReuired" *ngIf="formBaoGia.get('email').touched && formBaoGia.get('email').invalid" style="color: red;">Xin vui lòng cung cấp email</div>
+            </div>
+
+
+            <div class="space">
+                  
+                <label class="label">Số Điện Thoại *</label>
+                <input class="fieldReuired" formControlName="phone" type="text" id="phone">
+                <div class="fieldReuired" *ngIf="formBaoGia.get('phone').touched && formBaoGia.get('phone').invalid" style="color: red">Xin vui lòng cung cấp số điện thoại</div>
+            </div>
+
+            <div class="space-chonsanpham">
+                  
+                <label class="label">Vui Lòng Chọn Sản Phẩm Để Báo Giá:</label>
+                <div *ngFor="let sanpham of cacSanPham">
+                    <input type="checkbox" (change)="onCheckboxChange($event)" [value]="sanpham"/>
+                    {{sanpham}}
+                </div>
+                <div *ngIf="formBaoGia.get('sanpham').invalid" style="color: red;">Xin vui lòng chọn ít nhất 1 sản phẩm</div>
+            </div>
+
+            
+
+            <div class="space-button">
+                  
+                <button type="submit" class="space">Nhấp Để Gửi</button>
+                
+            </div>
+
+            
+            
+        </form>  
+    </div>
+    
+</div>

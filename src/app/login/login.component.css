@@ -1,0 +1,63 @@
+.user {
+    display: block
+}
+
+.label {
+    display: block
+}
+
+.content {
+    display: inline-block;
+    width: 8rem
+}
+
+.content input {
+    margin-bottom: 10px;
+}
+
+.content label {
+    margin-bottom: 10px;
+
+}
+
+button {
+    display: block;
+    margin: 0 auto
+}
+
+.content-wrapper {
+    width: 350px;
+    margin: 5% auto;
+    text-align: center;
+    background: rgb(159, 212, 228);
+    padding: 10px;
+    position: relative
+}
+
+.content-wrapper div {
+    padding: 10px;
+}
+
+button{
+    background: black;
+    color: white;
+    border:black;
+    border-radius: 10px;
+    width: 4rem;
+    height: 1.7rem;
+    font-weight: 600;
+}
+
+@media (max-width: 799px){
+    .content-wrapper {
+        width: 100%
+    }
+    .content-left {
+        width: 10rem;
+        
+    }
+    .content-right {
+        width: 10rem;
+        
+    }
+}

@@ -1,0 +1,75 @@
+/* Global */
+li {
+    font-size: large;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.content-wrap {
+    display: inline-block;
+    padding: 1%;
+    margin-right: 9%;
+    vertical-align: top;
+    position: relative;
+}
+
+.content-wrap-info {
+    padding-left: 5%;
+    width: 40%;
+}
+
+.content-wrap-map {
+    width: 30%;
+    height: 35vh;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer::before {
+    content:"";
+    background-image: url('../../assets/truck.png');
+    background-size: cover;
+    opacity: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+h2 {
+    position: relative
+}
+
+.bottom {
+    text-align: center;
+    font-weight: 600;
+    background: rgb(216, 215, 219);
+    height: 40px;
+    color: rgb(26, 7, 7)
+}
+
+h1{
+    font-weight: 900; 
+    padding-bottom: 10px;
+}
+
+/* screen size */
+ @media (max-width: 799px) {
+    .content-wrap{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,91 @@
+.content-wrap-galery{
+    width: 40%;
+    padding: 25px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.background-galery{
+    background: rgba(0, 9, 19, 0.87);
+}
+
+.content-wrap-sanpham{
+    padding: 25px;
+    width: 40%;
+    margin: 0 auto;
+    clear: both
+    /* place-content: center; */
+}
+
+.home{
+    /* background: linear-gradient(rgb(159, 189, 255),rgb(196, 212, 228), rgba(132, 132, 155, 0.2));  */
+    background: linear-gradient(rgb(5, 18, 58),rgb(218, 220, 224), rgba(132, 132, 155, 0.2)); 
+}
+
+.content-wrap-sanpham h3 {
+    color:rgba(44, 49, 63, 0.904);
+    /* font-family: 'Nunito', sans-serif; */
+    font-weight: 400;
+}
+
+
+.intro {
+    display: inline-block;
+    width: 20%;
+    padding: 1%;
+    vertical-align: middle;
+    /* background: crimson; */
+}
+
+.content-wrap-intro {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro h3 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: large;
+}
+
+mat-divider {
+    display: none;
+}
+
+.content-wrap-galery{
+    width: 50%;
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative
+}
+
+.title {
+    background: linear-gradient(to right, rgb(158, 160, 172),rgb(38, 56, 77), rgba(30, 158, 218, 0.2)); 
+    text-align: center;
+    /* border-radius: 10%; */
+    color: rgb(238, 227, 211);
+}
+
+.slogan h1 {
+    padding: 5px
+}
+
+@media (max-width: 799px) {
+    .content-wrap-sanpham {
+        width: 80%;
+    }
+    .content-wrap-galery{
+        width: 80%;
+    }
+    .intro{
+        display: inline;
+    }
+    mat-divider {
+        display: block;
+    }
+    .content-wrap-galery{
+        width: 90%;
+    }
+
+}

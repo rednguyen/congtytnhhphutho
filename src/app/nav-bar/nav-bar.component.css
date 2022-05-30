@@ -1,0 +1,30 @@
+/* ----------Global---------- */
+a {
+    text-decoration: none;
+    padding: 1.5%;
+    margin: 1%;
+    background: rgb(226, 225, 235);
+    color: rgb(47, 14, 85);
+    border-radius: 10%;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+a:hover{
+    opacity: 80%;
+}
+
+.content-wrapper {
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 80%;
+}
+
+.nav-bar {
+    background-color: rgb(88, 121, 103);
+    clear: both
+}
+
+

@@ -1,0 +1,75 @@
+.content-left{  
+    width: 85%;
+    height: 30px;
+    float: left;
+    background: #ecf4f7fa;
+}
+
+.content-wrap{
+    height: 30px;
+    background: rgb(97, 115, 156);
+    width: 15%;
+    float: left;
+}
+
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 4%;
+    margin-right: 8%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Gmail */
+  .fa-envelope {
+    background: #880707;
+    color: white;
+  }
+
+  /* Contact */
+  .fa-phone {
+      background: rgb(194, 134, 85);
+      color: white;
+  }
+
+  .login {
+    text-decoration: none;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(112, 104, 100);
+    background:rgb(171, 177, 190);
+    padding: 3px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 799px){
+    .content-left{
+        width: 50%;
+        height: 30px;
+        float: left;
+        background: #d4e0e7da;
+    }
+    
+    .content-wrap{
+        height: 30px;
+        background: rgb(97, 115, 156);
+        width: 50%;
+        float: left;
+    }
+  }

@@ -1,0 +1,182 @@
+.header { 
+    /* height: 500px; */
+    clear: both;
+    position: relative;
+
+}
+
+.header::before {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    right: 0;   
+    left: 0;
+    background-image: url("../../assets/background-building.jpg");
+    background-size: cover;
+    opacity: 70%;
+    content: ""
+}
+/*-------- Header ---------*/
+.content-wrapper-header {
+    height: 135px;
+    text-align: right;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 25px;
+}
+
+.content-wrapper-header h1 {
+    font-size: 200%;
+    font-weight: 700;
+    color: rgb(131, 14, 14);
+    margin: 0;
+}
+
+.content-wrapper-header h2 {
+    font-size: 180%;
+    font-family: 'Shizuru', cursive;
+    color: rgb(9, 20, 121);
+    padding-right: 20px;
+}
+
+.content-wrapper-header a {
+    float: left;
+    padding: 3em;
+    margin: -3em
+}
+
+
+
+
+/*--------- Nav-bar ----------*/
+.content-wrapper-nav-bar a {
+    text-decoration: none;
+    padding: 1.5%;
+    margin: 1%;
+    color: rgb(22, 2, 2);
+    background: url("../../assets/wood.jpg");
+    border-radius: 20%;
+    font-weight: 700;
+    font-size: 120%;
+    position: relative;
+}
+
+.content-wrapper-nav-bar a:hover{
+    opacity: 80%;
+}
+
+.content-wrapper-nav-bar {
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 80%;
+    clear: both
+}
+
+
+/* animation */
+h1 {
+    animation: moveleft 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+
+h2 {
+    animation: moveright 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveright {
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+
+
+.logo {
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+
+/* animation */
+.content-wrapper-nav-bar{
+    animation: appear 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        visibility: visible;
+    }
+
+    50%{
+        opacity: 0.5;
+        visibility: visible;
+    }
+
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* change screen size */
+@media (max-width: 799px){
+    h1 {
+        display: none;
+    }
+    h2{
+        display: none;
+    }
+    .content-wrapper-nav-bar a {
+        font-size: 90%;
+    }
+    .content-wrapper-header {
+        text-align: center;
+    }
+    .content-wrapper-header a {
+        float: none
+    }
+}
