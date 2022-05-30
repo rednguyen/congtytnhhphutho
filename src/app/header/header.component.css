@@ -181,7 +181,7 @@ h2 {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
     h1 {
         display: none;
     }
