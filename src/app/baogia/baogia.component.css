@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.space .fieldReuired{
+.space .fieldRequired{
     left: 200px;
     position: absolute;
     width: 50%;
@@ -60,6 +60,13 @@ button:hover{
 
 @media (max-width: 999px){
     .content-wrapper {
-        width: 100%
+        width: 90%
+    }
+}
+
+
+@media (max-width: 500px){
+    .space .fieldRequired{
+        width: 40%;
     }
 }
