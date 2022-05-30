@@ -180,3 +180,21 @@ h2 {
         float: none
     }
 }
+
+@media (max-width: 600px){
+    h1 {
+        display: none;
+    }
+    h2{
+        display: none;
+    }
+    .content-wrapper-nav-bar a {
+        font-size: 70%;
+    }
+    .content-wrapper-header {
+        text-align: center;
+    }
+    .content-wrapper-header a {
+        float: none
+    }
+}
