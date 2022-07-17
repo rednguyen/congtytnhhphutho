@@ -198,3 +198,9 @@ h2 {
         float: none
     }
 }
+
+@media (max-width: 400px){
+    .content-wrapper-nav-bar a {
+        font-size: 45%;
+    }
+}
