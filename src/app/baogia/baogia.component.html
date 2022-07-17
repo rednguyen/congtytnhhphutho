@@ -2,34 +2,34 @@
     <div class="content-wrapper">
         <form [formGroup]="formBaoGia" (ngSubmit)="onSubmit()">
             <div class="space">
-                <label class="label">Tên Khách Hàng *</label>
-                <input class="fieldRequired" formControlName="name" type="text" id="name">
+                <div class="label">Tên Khách Hàng *</div>
+                <input class="fieldRequired" formControlName="name" type="text" id="name" placeholder="Nguyen Van A">
                 <div class="fieldRequired" *ngIf="formBaoGia.get('name').touched && formBaoGia.get('name').invalid" style="color: red;">Xin vui lòng nhập tên khách hàng</div>
             </div>
             
             <div class="space">
-                <label class="label">Địa Chỉ *</label>
-                <input class="fieldRequired" formControlName="address" type="text" id="address" name="address">
+                <div class="label">Địa Chỉ *</div>
+                <input class="fieldRequired" formControlName="address" type="text" id="address" name="address" placeholder="55 Thanh Hoa, Hoi An, Quang Nam">
                 <div class="fieldRequired" *ngIf="formBaoGia.get('address').touched && formBaoGia.get('address').invalid" style="color: red;">Xin vui lòng cung cấp địa chỉ</div>
             </div>
             <div class="space">
                   
-                <label class="label">Email *</label>
-                <input class="fieldRequired" formControlName="email" type="text" id="email">
+                <div class="label">Email *</div>
+                <input class="fieldRequired" formControlName="email" type="text" id="email" placeholder="abc@gmail.com">
                 <div class="fieldRequired" *ngIf="formBaoGia.get('email').touched && formBaoGia.get('email').invalid" style="color: red;">Xin vui lòng cung cấp email</div>
             </div>
 
 
             <div class="space">
                   
-                <label class="label">Số Điện Thoại *</label>
-                <input class="fieldRequired" formControlName="phone" type="text" id="phone">
+                <div class="label">Số Điện Thoại *</div>
+                <input class="fieldRequired" formControlName="phone" type="text" id="phone" placeholder="0905-123-456">
                 <div class="fieldRequired" *ngIf="formBaoGia.get('phone').touched && formBaoGia.get('phone').invalid" style="color: red">Xin vui lòng cung cấp số điện thoại</div>
             </div>
 
             <div class="space-chonsanpham">
                   
-                <label class="label">Vui Lòng Chọn Sản Phẩm Để Báo Giá:</label>
+                <div class="label">Vui Lòng Chọn Sản Phẩm Để Báo Giá:</div>
                 <div *ngFor="let sanpham of cacSanPham">
                     <input type="checkbox" (change)="onCheckboxChange($event)" [value]="sanpham"/>
                     {{sanpham}}

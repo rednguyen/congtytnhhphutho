@@ -1,5 +1,5 @@
 .content-wrapper {
-    width: 50%;
+    width: 30%;
     margin: 2% auto;
     position: relative;
     padding: 5px;
@@ -8,18 +8,19 @@
 
 .space {
     margin: 1.5%;
+    margin-left: 5%;
     margin-top: 4%
 }
 
 .space label {
-    left: 20px;
+    /* left: 20px; */
     position: relative;
 }
 
 .fieldRequired{
-    left: 200px;
-    position: absolute;
-    width: 50%;
+    /* left: 200px; */
+    position: relative;
+    width: 90%;
 }
 
 button {
@@ -65,8 +66,8 @@ button:hover{
 }
 
 
-@media (max-width: 500px){
+/* @media (max-width: 500px){
     .space .fieldRequired{
-        width: 40%;
+        width: 80%;
     }
-}
+} */
