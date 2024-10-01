@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Galleries, Gallery } from './gallery';
+
+
 
 @Component({
   selector: 'app-gallery',
@@ -8,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   slideIndex: number = 0;
+  galleries: Gallery[] = Galleries;
   constructor() { }
 
   ngOnInit(): void {
@@ -58,7 +62,7 @@ export class GalleryComponent implements OnInit {
       if (this.slideIndex > slides.length) {this.slideIndex = 1};
       const slide = slides[this.slideIndex - 1] as HTMLElement;
       slide.style.display = "block"; 
-      console.log(this.slideIndex)
+      // console.log(this.slideIndex)
       setTimeout(() => this.autoShowSlides(), 2000); // Change image every 2 seconds
     }
 }
