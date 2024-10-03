@@ -7,12 +7,28 @@
 
     <div class="content-wrapper-nav-bar">
         <!-- <img src="../../assets/logo.png"> -->
-        <a href='https://vatlieuxaydungphuthoquangnam.com'>Trang Chu</a>
+        <a href='/'>Trang Chủ</a>
         <a href='#gioithieu'>Giới Thiệu</a>
         <a href='#sanpham'>Sản Phẩm</a>
         <a href='tuyendung'>Tuyển Dụng</a>
         <a href='#footer'>Liên Hệ</a>
         <a href='baogia'>Báo Giá</a>
+    </div>
+
+    <button class="dropdown-menu-button fa fa-bars" (click)="enableDropDownMenu()" *ngIf="dropDownMenu === false"></button>
+    <button class="dropdown-menu-button fa fa-close" (click)="diableDropDownMenu()" *ngIf="dropDownMenu === true"></button>
+    <div class="dropdown-menu" *ngIf="dropDownMenu === true">
+        <div><a href='/'>Trang Chủ</a></div>
+        <hr/>
+        <div><a href='#gioithieu'>Giới Thiệu</a></div>
+        <hr/>
+        <div><a href='#sanpham'>Sản Phẩm</a></div>
+        <hr/>
+        <div><a href='tuyendung'>Tuyển Dụng</a></div>
+        <hr/>
+        <div><a href='#footer'>Liên Hệ</a></div>
+        <hr/>
+        <div><a href='baogia'>Báo Giá</a></div>
     </div>
     
 </section>

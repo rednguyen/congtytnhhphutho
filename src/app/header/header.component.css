@@ -2,7 +2,6 @@
     /* height: 500px; */
     clear: both;
     position: relative;
-
 }
 
 .header::before {
@@ -13,7 +12,7 @@
     left: 0;
     background-image: url("../../assets/background-building.jpg");
     background-size: cover;
-    opacity: 70%;
+    opacity: 50%;
     content: ""
 }
 /*-------- Header ---------*/
@@ -73,6 +72,45 @@
     font-size: 80%;
     clear: both
 }
+
+.dropdown-menu-button{
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+    background-color: rgb(87, 105, 153);
+    color: white
+}
+
+.dropdown-menu-button:hover{
+    opacity: 70%;
+}
+
+
+.dropdown-menu{
+    background-color: rgb(204, 180, 180);
+    padding: 2%;
+    text-align: center;
+    display: none;
+    animation: moveright 0.5s linear 1;
+}
+
+.dropdown-menu a{
+    position: relative;
+    text-decoration: none;
+    margin: 1%;
+    color: rgb(28, 34, 44);
+    padding-bottom: 1%;
+    font-weight:bolder;
+}
+
+.dropdown-menu a:hover{
+    color: rgb(120, 136, 228)
+}
+    
 
 
 /* animation */
@@ -179,6 +217,12 @@ h2 {
     .content-wrapper-header a {
         float: none
     }
+    .dropdown-menu{
+        display: block;
+    }
+    .content-wrapper-nav-bar{
+        display: none;
+    }
 }
 
 @media (max-width: 500px){
@@ -197,10 +241,22 @@ h2 {
     .content-wrapper-header a {
         float: none
     }
+    .dropdown-menu{
+        display: block;
+    }
+    .content-wrapper-nav-bar{
+        display: none;
+    }
 }
 
 @media (max-width: 400px){
     .content-wrapper-nav-bar a {
         font-size: 45%;
+    }
+    .dropdown-menu{
+        display: block;
+    }
+    .content-wrapper-nav-bar{
+        display: none;
     }
 }
